@@ -18,7 +18,7 @@ with this program.  If not, see <http://www.gnu.org/licenses/>.
 How to use
 
 $make
-	will generate a shared library.
+	will generate a static library.
 
 $make test
 	will compile test.c file to use it for testing the libraray functions.
