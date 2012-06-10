@@ -15,4 +15,11 @@ void cg_register_error_callback (void (*function) (unsigned int, char*));
 //To allow user to throw errors.
 void cg_error (unsigned int, char*);
 
+//gcd functions
+//computes gcd of two numbers x,y using euclid's algorithm.
+long long cg_gcd_2l (long long , long long);
+
+//computes gcd of n numbers stored in array using euclid's algorithm.
+long long cg_gcd_nl (long long*, int);
+
 #endif
