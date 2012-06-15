@@ -6,6 +6,7 @@
 #define CG_ERROR_ARGUMENT_IS_ZERO 2
 #define CG_ERROR_ARGUMENT_IS_NEGATIVE 3
 #define CG_ERROR_ARGUMENT_OUT_OF_BOUND 4
+#define CG_ERROR_MEMORY_OUT_OF_BOUND 5
 
 //All function declaration here.
 
@@ -21,5 +22,9 @@ long long cg_gcd_2l (long long , long long);
 
 //computes gcd of n numbers stored in array using euclid's algorithm.
 long long cg_gcd_nl (long long*, int);
+
+//Prime functions
+//Calculates prime number using sieve theory from 1 to limit.
+unsigned int* cg_prime_i (int limit);
 
 #endif
