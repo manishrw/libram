@@ -27,4 +27,8 @@ long long cg_gcd_nl (long long*, int);
 //Calculates prime number using sieve theory from 1 to limit.
 unsigned int* cg_prime_i (int limit);
 
+//Checks if number is prime or not.
+int cg_isPrime_i (int no);
+int cg_isPrime_l (long long int no);
+
 #endif

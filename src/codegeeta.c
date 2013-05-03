@@ -70,9 +70,9 @@ long long int cg_gcd_nl (long long int *arr, int count)
 }
 
 //Prime functions
-//Calculates prime number using sieve theory
 unsigned int* cg_prime_i (int limit)
 {
+	//Generates prime numbers using sieve theory
 	uint8_t *arr;
 	unsigned int cnt = 1, i, j, *array;
 	if (limit < 2)
@@ -113,4 +113,38 @@ unsigned int* cg_prime_i (int limit)
 		if (!arr [i])
 			array [j++]=i;
 	return array;
+}
+
+int cg_isPrime_i (int no)
+{
+	//Checks if number is prime or not.
+	unsigned int i;
+	if (no < 1)
+	{
+		cg_error (CG_ERROR_ARGUMENT_OUT_OF_BOUND, "Value should be positive whole number");
+		return 0;
+	}
+	if(no % 2 == 0)
+		return 0;
+	for(i=3; i * i <= no; i+=2)
+		if(no % i == 0)
+			return 0;
+	return 1;
+}
+
+int cg_isPrime_l (long long int no)
+{
+	//Checks if number is prime or not.
+	long long int i;
+	if (no < 1)
+	{
+		cg_error (CG_ERROR_ARGUMENT_OUT_OF_BOUND, "Value should be positive whole number");
+		return 0;
+	}
+	if(no % 2 == 0)
+		return 0;
+	for(i=3; i * i <= no; i+=2)
+		if(no % i == 0)
+			return 0;
+	return 1;
 }
