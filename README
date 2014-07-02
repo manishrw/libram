@@ -1,18 +1,6 @@
-Copyright (C) Arth Patel (PioneerAxon) 2012 <arth.svnit@gmail.com>
-Copyright (C) Manish Wadhwani (manishrw) 2012 <manishsvnit007@gmail.com>
+LIBRAM is mathematical library containing useful functions for daily use.
 
-codegeeta is free software: you can redistribute it and/or modify it
-under the terms of the GNU General Public License as published by the
-Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-codegeeta is distributed in the hope that it will be useful, but
-WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along
-with this program.  If not, see <http://www.gnu.org/licenses/>.
+It also contains templates and functions to help you with competitive programming.
 
 -------------------------------------------------------------------------------
 
@@ -26,4 +14,3 @@ $make test
 
 $make clean
 	will clean the directory.
-

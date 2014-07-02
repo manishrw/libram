@@ -32,3 +32,4 @@ using namespace std;
 #define printll(x) printf("%lld\n",x)
 #define f_in(st) freopen(st,"r",stdin)
 #define f_out(st) freopen(st,"w",stdout)
+#define dbg(x) cout << "#x: " << x << endl;
