@@ -2,6 +2,8 @@
 
 """
 
+
+""" Probablistic functions """
 def hash_coll_p(n, r):
 	res = 1.0
 	r = r * 1.0	
@@ -12,13 +14,15 @@ def hash_coll_p(n, r):
 def birt_a_p(n):
 	r = 365.0
 	return hash_coll_p(n, r)
-	
+
+"""Number Theory functions"""	
 def gcd(a, b):
 	if(b == 0):
 		return a
 	if a < b:
 		return gcd(b, a)
 	return gcd(b, a % b)
+	
 
 def isprime(n):
 	for x in (x for x in xrange(2, n) if x * x <= n):
@@ -30,6 +34,8 @@ def primes(n):
 	arr_c = [True for x in range(n + 1)]
 	arr_c[0] = arr_c[1] = False
 	res = []
+	res_cnt = 0
+	res.append(0)
 	for x in (x for x in xrange(4, n + 1) if x % 2 == 0):
 		arr_c[x] = False
 	for x in (x for x in xrange(2, n / 2) if x * x < n and x % 2 == 1 and arr_c[x] == True):
@@ -38,4 +44,5 @@ def primes(n):
 	for x in range(n + 1):
 		if arr_c[x]:
 			res.append(x)
+	res[0] = res_cnt
 	return res
