@@ -1,6 +1,7 @@
 #include<iostream>
 #include<vector>
 #include<map>
+#include<cstdio>
 using namespace std;
 
 #define MOD 1000000007

@@ -1,0 +1,24 @@
+*Graph Algorithms
+- All Pair Shortest Path (APSP)
+- Connected components (Union Find)
+
+*Tree Algorithms
+- Minimum Spanning Tree (MST)
+-- Prim's Algorithm
+-- Kruskal's Algorithm
+- Binary Search Tree (BST)
+
+*Search Algorithms
+- A* search
+- Depth First Search (DFS)
+- Breadth First Search (BFS)
+- Heuristics search
+
+*Dynamic programming
+- Longest Subsequence
+- Knapsack
+
+*Number Theory Algorithms
+- Prime generation
+- Greatest Common Divisor (GCD)
+
